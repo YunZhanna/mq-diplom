@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <aside class="popup">
+      <div class="container_popup">
+      <button class="button__close">
+        <span class="popup_close_hint">Закрыть окно</span>
+      </button>
+      <div class="popup_quiz">
+        <h2 class="popup_title">ваш фидбек</h2>
+        <form class="form_popup">
+          <div class="form-row-select">
+            <label class="select-group">
+              <span class="select-label">Как часто вы заходите на сайт?</span>
+              <select class="select">
+                <option value="everyday" selected="Почти каждый день">Почти каждый день</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row-radio">
+            <label class="label-group"> 
+              <span class="radio-label">Вы подписаны на e-mail рассылку?</span>
+              <div class="radio_groups">
+                <div class="radio-group">
+                  <input type="radio" class="radio" name="radio-group">
+                  <span class="radio-group-text">Да</span>
+                </div>
+                <div class="radio-group">
+                  <input type="radio" class="radio" name="radio-group">
+                  <span class="radio-group-text">Нет</span>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="form-row-quiz">
+            <label class="field-group_quiz">
+              <span class="field-label-quiz">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+              <textarea class="field_quiz" placeholder="Может, больше рецептов?"></textarea>
+            </label>
+          </div>
+          <button class="button-quiz">Отправить</button> 
+        </form>
+      </div>
+      </div>
+    </aside>
     <header class="header">
       <div class="header-wrapper">
         <div class="container">
@@ -36,6 +78,62 @@
         <h1 class="header-title">блог о творчестве, спорте, и образе жизни</h1>
       </div>
     </header>
+    <section class="section-trends">
+      <div class="section-trends-wrapper">
+        <h2 class="section_title">сейчас в тренде</h2>
+        <div class="cards_trends_container">
+          <div class="card_trend card_trend_1">
+            <div class="content_card_trend">
+              <ul class="more">
+                <li class="more-list">
+                  <a class="more-link" href="#0">lifestyle</a>
+                </li>
+                <li class="more-list">
+                  <a class="more-link" href="#0">interior</a>
+                </li>
+              </ul>
+              <h2 class="card_trend_title"><a href="#0" class="card_trend_title">сейчас в тренде: сад на подоконнике</a></h2>
+            </div>
+          </div>
+          <div class="card_trend card_trend_2">
+            <div class="content_card_trend">
+              <ul class="more">
+                <li class="more-list">
+                  <a class="more-link" href="#0">food</a>
+                </li>
+              </ul>
+              <h2 class="card_trend_title"><a href="#0" class="card_trend_title">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
+            </div>
+          </div>
+          <div class="card_trend card_trend_3">
+            <div class="content_card_trend">
+              <ul class="more">
+                <li class="more-list">
+                  <a class="more-link" href="#0">lifestyle</a>
+                </li>
+                <li class="more-list">
+                  <a class="more-link" href="#0">travel</a>
+                </li>
+              </ul>
+              <h2 class="card_trend_title"><a href="#0" class="card_trend_title">собираемся в первый поход в горы</a></h2>
+            </div>
+          </div>
+          <div class="card_trend card_trend_4">
+            <div class="content_card_trend">
+              <ul class="more">
+                <li class="more-list">
+                  <a class="more-link" href="#0">food</a>
+                </li>
+                <li class="more-list">
+                  <a class="more-link" href="#0">health</a>
+                </li>
+              </ul>
+              <h2 class="card_trend_title"><a href="#0" class="card_trend_title">сейчас в тренде: сколько витамина с в лимонах?</a></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="section">
       <div class="section-wrapper">
         <main class="blogs">
@@ -303,6 +401,92 @@
           </section>
         </aside>
       </div>
+      <section class="products-wrapper">
+        <h2 class="section_title">наши изделия</h2>
+        <div class="cards_products">
+          <article class="card_product">
+            <div class="product_imgbox">
+              <picture>
+                <source media="min-width: 768px" src="images/shop-item-tablet1.jpg">
+                <source media="min-width: 360px" src="images/shop-item-mobile1.jpg">
+                <img src="images/shop-item-desk1.jpg" alt="Товар:подушка">
+              </picture>
+            </div>
+            <div class="product_body">
+              <div class="product_content">
+                <h2 class="product_title">подушки на диван</h2>
+                <div class="product_description">
+                  <p>Набор из двух подушек с модными принтами. Видио о создании <a href="#0" class="link_product_description">здесь</a>.</p>
+                </div>
+              </div>
+              <footer class="product_footer">
+                <div class="product_prices">
+                  <div class="product-price product-price_old">
+                    <span class="product-price-value">1000 ₽</span>
+                  </div>
+                  <div class="product-price">
+                    <span class="product-price-value">800 ₽</span>
+                  </div>
+                </div>
+               <button class="product_button" type="button">в магазин</button>
+              </footer>
+            </div>
+          </article>
+          <article class="card_product">
+            <div class="product_imgbox">
+              <picture>
+                <source media="min-width: 768px" src="images/shop-item-tablet2.jpg">
+                <source media="min-width: 360px" src="images/shop-item-mobile2.jpg">
+                <img src="images/shop-item-desk2.jpg" alt="Товар:кукла">
+              </picture>
+            </div>
+            <div class="product_body">
+              <div class="product_content">
+                <h2 class="product_title">кукла "зайчик"</h2>
+                <div class="product_description">
+                  <p>Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#0" class="link_product_description">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+                </div>
+              </div>
+              <footer class="product_footer">
+                <div class="product_prices">
+                  <div class="product-price">
+                    <span class="product-price-value">3500 ₽</span>
+                  </div>
+                </div>
+               <button class="product_button" type="button">в магазин</button>
+              </footer>
+            </div>
+          </article>  
+          <article class="card_product">
+            <div class="product_imgbox">
+              <picture>
+                <source media="min-width: 768px" src="images/shop-item-tablet3.jpg">
+                <source media="min-width: 360px" src="images/shop-item-mobile3.jpg">
+                <img src="images/shop-item-desk3.jpg" alt="Товар:рамка">
+              </picture>
+            </div>
+            <div class="product_body">
+              <div class="product_content">
+                <h2 class="product_title">шестиуголная рамка</h2>
+                <div class="product_description">
+                  <p>Необычная рамка для украшения дома из видио <a href="#0" class="link_product_description">"Как сделать рамку из подручных средств за 30 минут"</a></p>
+                </div>
+              </div>
+              <footer class="product_footer">
+                <div class="product_prices">
+                  <div class="product-price product-price_old">
+                    <span class="product-price-value">500 ₽</span>
+                  </div>
+                  <div class="product-price">
+                    <span class="product-price-value">400 ₽</span>
+                  </div>
+                </div>
+               <button class="product_button" type="button">в магазин</button>
+              </footer>
+            </div>
+          </article> 
+        </div>
+      </section>  
     </div>
     <footer class="footer">
       <div class="footer-wrapper">
