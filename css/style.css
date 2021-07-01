@@ -33,7 +33,7 @@ ul, il {
 }
 
 .menu-link:hover, .more-link:hover, .preview-title:hover, .card-author:hover, .post-title:hover, .link_product_description:hover, .card_trend_title:hover {
-  color: #0000ff;
+  color: #b59f5b;
 }
 
 .sidebar-title::after, .trends_title::after, .products_title::after, .popup_title::after {
@@ -89,7 +89,9 @@ ul, il {
   position: relative;
   max-width: 390px;
   min-width: 330px;
-  margin: 2vh auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: -2;
   font-family: "Open Sans Regular", sans-serif;
   font-size: 14px;
@@ -230,7 +232,7 @@ ul, il {
 
 .header {
   background-color: #000000;
-  padding: 30px 0;
+  padding: 30px 0 150px;
   background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -255,6 +257,7 @@ ul, il {
 .header-wrapper {
   padding: 0 15px;
   margin: auto;
+  max-width: 1200px;
 }
 
 .container {
@@ -310,9 +313,13 @@ ul, il {
   text-indent: -9999px;
 }
 
-.menu-list-item {
+.menu-list-item:not(:first-child) {
   margin-left: 30px;
-  display: inline-flex;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
 }
 
 .menu-link {
@@ -328,8 +335,7 @@ ul, il {
   text-transform: uppercase;
   max-width: 690px;
   text-align: center;
-  margin: auto;
-  padding: 120px 0;
+  margin: 120px auto 0;
 }
 
 /* ========== SECTION TRENDS ========== */
@@ -362,9 +368,7 @@ ul, il {
   background-size: cover;
   position: relative;
   z-index: 0;
-  display: flex;
-  padding-top: 70px;
-  vertical-align: bottom;
+  padding: 20px;
 }
 
 .card_trend_1 {
@@ -397,7 +401,6 @@ ul, il {
 
 .content_card_trend {
   border: 3px solid #b59f5b;
-  margin: auto 20px 20px;
   padding: 30px;
   width: 100%;
 }
@@ -575,6 +578,9 @@ p:not(:last-child) {
 .subscription-form {
   display: flex;
   flex-direction: column;
+}
+
+.subscription-group {
   margin-bottom: 60px;
 }
 
@@ -689,8 +695,9 @@ p:not(:last-child) {
 /* ========== FOOTER ==========*/
 
 .footer {
-  margin: 65px 0 40px;
+  margin-top: 65px;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .footer-wrapper {
