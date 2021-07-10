@@ -32,7 +32,7 @@ ul, il {
   list-style-type: none; 
 }
 
-.menu-link:hover, .more-link:hover, .preview-title:hover, .card-author:hover, .post-title:hover, .link_product_description:hover, .card_trend_title:hover {
+.menu-link:hover, .more-link:hover, .preview-title:hover, .card-author:hover, .post-title:hover, .link_product_description:hover, .card_trend_title:hover, .teg-link:hover, .theme-link:hover, .copyright:hover {
   color: #b59f5b;
 }
 
@@ -69,6 +69,7 @@ ul, il {
 /* ========== POPUP ========== */
 
 .popup {
+  display: flex;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -92,9 +93,7 @@ ul, il {
   position: relative;
   max-width: 390px;
   min-width: 330px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
   z-index: -2;
   font-family: "Open Sans Regular", sans-serif;
   font-size: 14px;
@@ -503,7 +502,7 @@ p:not(:last-child) {
 }
 
 .posts {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .sidebar-title {
@@ -566,6 +565,7 @@ p:not(:last-child) {
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+  display: none;
 }
 
 .search-button {
@@ -588,6 +588,13 @@ p:not(:last-child) {
 
 .subscription-group {
   margin-bottom: 60px;
+}
+
+.subscription-hint {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* ========== TEGS ==========*/
@@ -648,6 +655,11 @@ p:not(:last-child) {
 
 .product_imgbox {
   margin: 0 auto;
+}
+
+.product_img {
+  margin: auto;
+  width: 100%;
 }
 
 .card_product {
@@ -782,7 +794,7 @@ p:not(:last-child) {
 
 /* ============ MEDIA 1200 ============*/
 
-@media (min-width: 1200px), (max-width: 1199px) and (orientation: landscape) {
+@media (min-width: 1200px), (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
   .menu_button {
     display: none;
   }
